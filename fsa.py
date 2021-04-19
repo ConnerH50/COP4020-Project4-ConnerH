@@ -100,6 +100,9 @@ class FSA:
     def getStateTransitions(self):
         return self.stateTransitons
 
+    def getTransitionArray(self):
+        return self.transitionArray
+
     def getStartState(self):
         return self.startState
     

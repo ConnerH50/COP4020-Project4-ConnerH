@@ -13,4 +13,7 @@ print('Alphabet - ',fsa.getAlphabet())
 print('Transitions - ',fsa.getStateTransitions())
 print('Start State - ',fsa.getStartState())
 print('Accept States - ',fsa.getAcceptStates())
+
+fsa.makeTransitions()
+
 #print('processing ', fsa.getFileInput())

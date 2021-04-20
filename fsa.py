@@ -12,7 +12,6 @@ class FSA:
         self.acceptStates = acceptStates
         self.currentState = int(self.startState)
         self.transitionArray = []
-        #self.GUI = GUIMaker(self.getStateNum(), self.getAlphabet(), self.getStateTransitions(), self.getStartState(), self.getAcceptStates())
         self.transitionsValid = True
 
     def readInputFile(self, fileName):
@@ -84,12 +83,6 @@ class FSA:
             return True
         else:
             return False
-
-    # def runGUIMaker(self):
-    #     print("")
-    #     # self.GUI.makeTransitions(self.transitionArray)
-    #     # self.GUI.makeStates()
-    #     # self.GUI.runGUI()
 
     def getStateNum(self):
         return self.stateNum

@@ -43,7 +43,7 @@
 
 (DEFUN stateThree(l)
     (cond
-        ((null l) (princ "String Rejected!"))
+        ((null l) (princ "String Accepted!"))
         ((equal 'x (car l)) (stateThree(cdr l)))
         ((equal 'z (car l)) (stateFour(cdr l)))
         (t (princ "State 3: String invalid"))

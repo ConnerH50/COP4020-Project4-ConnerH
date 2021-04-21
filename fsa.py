@@ -1,7 +1,7 @@
 import sys
-import tkinter as tk
 #from guiMaker import GUIMaker
 from transitions import Transitions
+from lispMaker import LispMaker
 class FSA:
 
     def __init__(self, stateNum, alphabet, stateTransitons, startState, acceptStates):
@@ -56,6 +56,10 @@ class FSA:
                     break
             
         self.checkForAcceptState()
+
+    def runLispMaker(self):
+        lispMaker = LispMaker(self.stateNum, self.alphabet, self.stateTransitons, self.transitionArray, self.startState, self.acceptStates)
+        lispMaker.writeFile()
                 
     def checkForAcceptState(self):
 

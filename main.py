@@ -17,4 +17,6 @@ print('Accept States - ',fsa.getAcceptStates())
 
 fsa.makeTransitions()
 
+fsa.runLispMaker()
+
 #print('processing ', fsa.getFileInput())

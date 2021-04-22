@@ -8,7 +8,6 @@ reader = FileReader(sys.argv[1])
 reader.run()
 
 fsa = FSA(reader.getStateNum(), reader.getAlphabet(), reader.getTransitionStates(), reader.getStartState(), reader.getAcceptStates())
-#fsa.readInputFile(sys.argv[2])
 print('Number of States - ', fsa.getStateNum())
 print('Alphabet - ',fsa.getAlphabet())
 print('Transitions - ',fsa.getStateTransitions())
@@ -18,5 +17,3 @@ print('Accept States - ',fsa.getAcceptStates())
 fsa.makeTransitions()
 
 fsa.runLispMaker()
-
-#print('processing ', fsa.getFileInput())

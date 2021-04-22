@@ -24,7 +24,6 @@
 )
 
 (DEFUN stateOne(l)
-    ;(cdr l)
     (cond
         ((null l) (princ "String Accepted!"))
         ((equal 'x (car l)) (stateTwo(cdr l)))
